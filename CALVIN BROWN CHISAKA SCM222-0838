@@ -1,0 +1,108 @@
+
+Foundational Information Technology: Extended Academic Document
+Unit 1: Introduction to IT & Computers
+1.1 Definition and Scope of Information Technology (IT)
+IT is the convergence between computing and telecommunications. The scope is extremely broad, and it includes data collection, transmission, storage, retrieval, processing, and system security.
+* IT Stack: It is conceptual that IT is organized in layers: Hardware (physical devices), Operating System (system software), Database (data persistence), Network (data transfer), and Application (user interface/logic).
+* The Information Processing Cycle (IPC) Revisited: The fundamental model for all computing.
+Input: Data acquisition, for example, keyboard, sensor.
+* Processing: Data manipulation, such as CPU/ALU operations.
+Output: Presentation of the results (for example, screen, report)
+Storage: Permanent record keeping: disk drive.
+ 
+1.2 Generations of Computing
+The development of computing technology fundamentally shaped the architecture of modern IT.
+First Generation: 1940s-1950s Based on Vacuum Tubes. Large, costly, slow, and highly heat generating (e.g., ENIAC). Programming done in machine language.
+* Second Generation 1950s–1960s: Transistors introduced, smaller, faster, more reliable, less heat. High-level languages (FORTRAN, COBOL) emerged.
+Third Generation (1960s–1970s): Integrated Circuits (ICs) were used, wherein miniaturized circuits are put on silicon chips. It marked the advent of modern operating systems and multiprocessing.
+Fourth Generation (1970s–Present): Introduction of the Microprocessor (CPU on a single chip) and the Personal Computer (PC). This era gave rise to the development of networks, such as LANs, and the Internet.
+Unit 2: Fundamentals of Computer Operations
+2.1 Deep Dive into the Instruction Cycle (Fetch-Decode-Execute)
+The clock of the CPU controls the Instruction Cycle execution rate.
+* Program Counter (PC): The CPU register that specifies the memory address of the next instruction to be fetched.
+* Instruction Register (IR): A register that temporarily holds the instruction that has just been fetched from memory.
+* Decoding: The Control Unit interprets the opcode or operation code within the instruction to determine what function the ALU must perform.
+ 
+Pipelining: An IT optimization technique whereby the CPU fetches a subsequent instruction while the previous instruction is still in execution, thus greatly improving the overall instruction throughput.
+2.2 System Buses and Data Flow
+The buses are the communication highways inside the computer. They are crucial to how fast data is transferred.
+* Address Bus: Specifies the location (memory address or I/O port) where the data will be read from or written to. Unidirectional (from CPU to memory/device).
+* Data Bus: These lines carry the actual data being transferred between components. Bidirectional.
+* Control Bus: Carries signals, or commands, from the Control Unit to other components. Examples include read/write commands, timing signals.
+* Bus Width: A wider bus, such as a 64-bit one, is capable of transferring more data at a time. This directly improves performance.
+2.3 Computer Ports and Interfaces
+The physical or wireless interfaces used to connect external devices are called ports.
+* Serial vs. Parallel:
+Serial: Data is transmitted one bit at a time over one wire. Examples include USB and Ethernet. It is slower but more reliable over greater distances.
+ 
+* Parallel: Sends many bits at a time over many wires; for example, older parallel printer ports. Faster for short distances, but they are susceptible to signal skew.
+* Expansion Slots: Connectors on the motherboard, such as PCI Express (PCIe), to which expansion cards are installed, including but not limited to dedicated graphics cards or network cards, accommodate system customization and upgradeability.
+Unit 3: Computer Hardware Basics
+3.1 The CPU Architecture and Cache Memory
+Modern CPUs use complex architectures-like x86, ARM-to optimize the processing of instructions.
+Cache Memory: A very small, but extremely fast memory placed physically close to the CPU core. It stores copies of data that the CPU is likely to need next, reducing the time-consuming trips to slower RAM.
+L1 Cache: smallest and fastest, dedicated to each core.
+ 
+L2 Cache: Larger than L1 and dedicated to each core or shared.
+L3 Cache: The largest and slowest; normally shared among all CPU cores.
+* Multithreading: A technique where multiple threads, parts of a process, are run by a single CPU core, thus increasing the utilization of CPU resources.
+3.2 Main Memory Technologies
+ 
+The main memory is usually made up of Dynamic RAM, which needs refreshing from time to time to hold the charge of data.
+SDRAM: Synchronous DRAM synchronized with the clock of the CPU, which increases speed and efficiency.
+ 
+* Double Data Rate SDRAM (DDR): Transfers twice per clock cycle, at the rising and falling edges of the clock signal, doubling data transfer rates, with successive generations denoted as DDR3, DDR4, DDR5.
+Memory Addressing - Every byte in RAM has a memory address so that the CPU can access any piece of data in an instant.
+3.3 BIOS and Firmware
+Basic Input/Output System (BIOS) / Unified Extensible Firmware Interface: Unlike everything else, these are small programs written to ROM/flash memory on the motherboard. They handle the Power-On Self-Test (POST), initialize hardware, and load the boot loader to bootstrap an operating system.
+Firmware: Specialized software that offers low-level control to the specific hardware of a device and is usually found within routers, printers, and hard drives.
+ 
+Unit 4: Computer Software Basics
+4.1 Operating System Functions: A Closer Look
+The OS acts as a resource manager, abstracting the complexity of hardware away from the application programs.
+* Kernel: The core of an OS, it controls how hardware interacts with software.
+* Virtual Memory: A method whereby the OS uses the hard disk space, referred to as a swap file or a paging file, to act like additional RAM when the physical RAM is full. This allows the use of more programs on the computer than its physical RAM allows, but very slowly.
+* Multitasking: The ability of an OS to support many processes, executed seemingly simultaneously by quickly switching the CPU among tasks, using time-slicing.
+4.2 Software Licensing and Acquisition
+Software is usually controlled by licensing models.
+ 
+* Proprietary Software: belongs to a company or individual; users must buy a license to use it. Example: Microsoft Office
+OSS stands for Open-source software: source code is freely available and modifiable. Community-led or collaborative development is encouraged: Linux, Python.
+• Software as a Service (SaaS): Applications are hosted by the vendor and provided over the Internet (this is sometimes referred to as Cloud Computing), without local installation. Examples include Google Workspace, Salesforce.com.
+4.3 Translating Software: Compilers vs. Interpreters
+The high-level programming code needs to be converted to machine code, which is binary.
+* Compiler: This translates the entire source code into an executable machine code file before execution. A resulting program runs very fast. Example: C, C++
+Interpreter: Translates and carries out the source code line by line at execution time. Slower execution speed, but development and debugging is often faster.
+ 
+Unit 5: Data and Data Files
+5.1 Data Representation: Advanced Concepts
+The representation of data affects the accuracy and size of digital information.
+* Two's Complement: The standard method used by computers to represent and perform arithmetic on negative integers.
+ 
+* Floating-Point Standard: IEEE 754, which defines the industry standard for real number representation. It defines the number of bits for the sign, the exponent, and the mantissa; hence, it defines the precision and range of the number.
+* Image File Formats:
+* Raster Images (PNG, JPEG): These store images as a map of colored pixels. Resolution-dependent.
+* Vector Images: This format stores images as mathematical formulas that denote lines and shapes. It's resolution-independent, meaning it can scale up without losing any quality.
+5.2 File Organization Techniques
+How data is physically laid out on the disk affects retrieval speed.
+* Sequential File Organization: Records are stored and accessed in order like a cassette tape. Slow for random access
+* Direct/Random File Organization Records are accessed directly by using a mathematical calculation (hashing) that transforms the record's key into its physical address. Fast for specific retrieval.
+Indexed Sequential File Organization (ISAM): Records are stored in a sequential manner, but an index is maintained separately to facilitate both sequential and direct access.
+5.3 Data Compression
+Methods of information technology that reduce the size of a data file in order to make its storage and transmission more efficient.
+Lossless Compression: The original data can be perfectly reconstructed from the compressed data, such as ZIP and PNG. It is applied to text and executable files because data integrity is essential in these situations.
+Lossy Compression: A method that will get rid of some data considered less critical once and for all to achieve a much higher compression ratio, such as JPEG and MP3. Used for media where small losses are often imperceptible.
+ 
+Unit 6: Disk Storage Fundamentals
+6.1 Hard Disk Drive (HDD) Operations
+Understanding the mechanics of an HDD is key to understanding its performance bottlenecks.
+ 
+* Platters: Circular disks coated with magnetic material. Data stored is magnetic.
+Read/Write Head: Floats microseconds above the platters, controlled by an actuator arm.
+* Tracks, Sectors and Cylinders:
+Tracks: Concentric rings on the platter surface.
+ 
+Information * Sectors: Pie-shaped divisions of a track. The smallest physical unit of storage.
+Cylinders: The set of tracks at the same distance from the center on all platter surfaces.
+* Access time: This is a measure of the delay to retrieve data, consisting of Seek Time-time taken to move the head to the correct track-and Rotational Latency-time taken for the correct sector to spin under the head. This mechanical delay is what makes a hard drive slow.
+6.2 Solid State Drive (SSD) Technology SSDs depend on NAND Flash Memory, a kind of non-volatile memory. Data can only be written to pages, but it has to be erased by larger blocks. The erase process, along with the limited life cycle of blocks, calls for advanced wear-leveling algorithms that the SSD controller implements through firmware. * TRIM Command: A command issued by the OS to the SSD to indicate which data blocks are no longer useful, enabling the garbage collection process to function more effectively. 6.3 Enterprise Storage Architectures In large organizations, storage is complex and distributed. SAN stands for Storage Area Network, which is a dedicated, high-speed network allowing block-level access to consolidated storage. It is generally used by servers for applications and databases. NAS: A file-level data storage server connected to a computer network, which provides centralized storage and file sharing among network clients. * Cloud Storage: Data is stored, managed, and backed up on servers remotely via the internet. Examples include AWS S3 and Google Drive. 6.4 Data Reliability and Security * Redundancy (RAID): Essential for enterprise reliability. * Data Archiving: The process of moving data that is no longer active but must be retained for legal or regulatory reasons to low-cost, high-capacity, long-term storage media such as magnetic tape libraries. * Full Disk Encryption (FDE): Automatically encrypts the entire contents of the disk, allowing security against physical drive theft.
